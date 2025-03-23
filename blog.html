@@ -60,7 +60,7 @@
                     <nav class="header__menu mobile-menu">
                         <ul>
                             <li><a href="./index.html">Home</a></li>
-                            <li><a href="./about.html">Shop</a></li>
+                            <li><a href="./shop.html">Shop</a></li>
                             <li><a href="./team.html">Team</a></li>
                             <li class="active"><a href="./blog.html">Blog</a></li>
                             <li><a href="./contact.html">Contacts</a></li>
@@ -98,6 +98,16 @@
     <section class="blog spad">
         <div class="container">
             <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic set-bg" data-setbg="img/blog/details/9.jpg"></div>
+                        <div class="blog__item__text">
+                            <span><img src="img/icon/calendar.png" alt=""> 23 March 2025</span>
+                            <h5>Circular Fashion & Zero Waste</h5>
+                            <a href="./blog-6.html" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
                         <div class="blog__item__pic set-bg" data-setbg="img/blog/details/4.jpg"></div>
@@ -149,16 +159,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/details/9.jpg"></div>
-                        <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 02 March 2025</span>
-                            <h5>Circular Fashion & Zero Waste</h5>
-                            <a href="./blog-6.html" target="_blank">Read More</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -202,12 +202,17 @@
                 <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
                     <div class="footer__widget">
                         <h6>NewLetter</h6>
-                        <div class="footer__newslatter">
+                        <div class="subs">
                             <p>Discover the revolution in sustainable fashion with our eco-friendly collections.</p>
-                            <form action="#">
-                                <input type="text" placeholder="Your email">
-                                <button type="submit"><span class="icon_mail_alt"></span></button>
-                            </form>
+                            <form id="subscribeForm" name="submit-to-google-sheet" action="#">
+                              <input type="text" id="email" name="Email" placeholder="Your email" required 
+                                  style="padding: 10px; border: 1px solid #ccc;  font-size: 80%; flex: 1; min-width: 0;">
+                                  <button type="submit" 
+                                  style="background-color: #28a745; color: white; padding: 10px 15px; border: none; cursor: pointer; font-size: 80%; ">
+                                  Send
+                              </button>
+                          </form>
+                            <span style="color:green" id="mg"></span>
                         </div>
                     </div>
                 </div>
@@ -253,6 +258,8 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/subs.js"></script>
+
 </body>
 
 </html>

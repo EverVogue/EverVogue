@@ -184,8 +184,7 @@
                         <h2>Circular Fashion & Zero Waste</h2>
                         <ul>
                             <li>By Bhumika Mittal</li>
-                            <li>March 02, 2025</li>
-                            
+                            <li>March 23, 2025</li>
                         </ul>
                     </div>
                 </div>
@@ -371,12 +370,17 @@
             <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
                 <div class="footer__widget">
                     <h6>NewLetter</h6>
-                    <div class="footer__newslatter">
+                    <div class="subs">
                         <p>Discover the revolution in sustainable fashion with our eco-friendly collections.</p>
-                        <form action="#">
-                            <input type="text" placeholder="Your email">
-                            <button type="submit"><span class="icon_mail_alt"></span></button>
-                        </form>
+                        <form id="subscribeForm" name="submit-to-google-sheet" action="#">
+                          <input type="text" id="email" name="Email" placeholder="Your email" required 
+                              style="padding: 10px; border: 1px solid #ccc;  font-size: 80%; flex: 1; min-width: 0;">
+                              <button type="submit" 
+                              style="background-color: #28a745; color: white; padding: 10px 15px; border: none; cursor: pointer; font-size: 80%; ">
+                              Send
+                          </button>
+                      </form>
+                        <span style="color:green" id="mg"></span>
                     </div>
                 </div>
             </div>
@@ -534,6 +538,8 @@ function getRandomColor() {
 
 
         </script>
+    <script src="js/subs.js"></script>
+
 </body>
 
 </html>
